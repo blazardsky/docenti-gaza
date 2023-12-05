@@ -1,12 +1,12 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
+  "name": "docenti-per-gaza",
+  "version": "1.0.0",
+  "description": "Sito dal quale firmare l'appello per il cessate il fuoco per i docenti italiani",
   "private": true,
   "keywords": [
     ""
   ],
-  "license": "",
+  "license": "NOHATE License",
   "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
