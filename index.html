@@ -42,13 +42,49 @@
     </header>
     <figure class="my-lg center">
       <picture>
-        <source src="img/foto-bambini-gaza-crisi-umanitaria.webp" type="image/webp" />
+        <source 
+          media="(max-width: 768px)" 
+          srcset="img/foto-bambini-gaza-crisi-umanitaria--crop.webp" 
+          type="image/webp" 
+        />
+        <source 
+          media="(max-width: 769px)" 
+          srcset="img/foto-bambini-gaza-crisi-umanitaria--crop.jpg" 
+          type="image/jpeg" 
+        />
+        <source 
+          media="(min-width: 997px)"
+          src="img/foto-bambini-gaza-crisi-umanitaria.webp" 
+          type="image/webp"
+        />
         <img class="mx-auto" src="img/foto-bambini-gaza-crisi-umanitaria.jpg" alt="Foto di colomba in primo piano che si alza in volo tra le macerie a Gaza e alcuni bambini nello sfondo che guardano verso la fotocamera" height="570" width="1217" />
       </picture>
       <figcaption>Foto: Reuters</figcaption>
     </figure> 
     <hr />
-    <article>
+    <section class="center w-prose">
+      <h3> In breve </h3>
+      <p>
+        Oggi, 20 novembre 2023, si celebra la Giornata Mondiale dei Diritti dei Bambini. Tuttavia, a Gaza, si sta verificando una grave crisi umanitaria a causa degli attacchi militari israeliani, con oltre 5.000 bambini uccisi e molte altre vite in pericolo.
+      </p>
+      <h3>Richieste dell'appello:</h3>
+      <ol>
+        <li>
+          Condanniamo fermamente le violazioni del Diritto Umanitario Internazionale e della Convenzione di Ginevra, sottolineando la chiara violazione di diritti fondamentali nei confronti dei bambini di Gaza.
+        </li>
+        <li>
+          Chiediamo un immediato cessate il fuoco per porre fine al massacro in corso e garantire la sicurezza e la protezione dei bambini e delle popolazioni coinvolte.
+        </li>
+        <li>
+          Rivolgiamo un appello alle istituzioni italiane, richiedendo azioni concrete come l'accoglienza scolastica presso gli istituti italiani per i bambini palestinesi, contribuendo così a mitigare la tragedia umanitaria.
+        </li>
+      </ol>
+      <a role="button" class="cta my-lg" href="https://docs.google.com/forms/d/e/1FAIpQLScOVlo2A1p2YGXSZ1XomnzURV-vdfyN4BtdVSpH_CrvpFigCQ/viewform?usp=sf_link">
+        FIRMA ORA
+      </a>
+    </section>
+    <hr />
+    <article class="center w-prose">
       <section class="text-right text-sm text-mute">
         <time datetime="2023-11-20">20 novembre 2023</time>
         <p>
@@ -114,7 +150,6 @@
       <a role="button"  class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScOVlo2A1p2YGXSZ1XomnzURV-vdfyN4BtdVSpH_CrvpFigCQ/viewform?usp=sf_link">FIRMA ORA</a>
     </article>
   </main>
-
   <footer class="text-center mt-lg">
     <strong>
       <a href="mailto:docentipergaza@gmail.com">docentipergaza@gmail.com</a>
@@ -122,7 +157,7 @@
     <hr />
     <h3 class="mb-0">Condividi questo appello</h3>
     <div class="mb-lg">
-      <ul class="unlist flex-row" style="--gap: 2em;">
+      <ul class="unlist flex-row" style="--gap: 2em; --justify: center;  --align: center;">
         <li class="icon">
           <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdocentipergaza.it%2F" title="Condividi su Facebook">
             <p class="visually-hidden">Condividi su Facebook</p>
@@ -163,29 +198,40 @@
           </a>
         </li>
         <li class="icon">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdocentipergaza.it%2F&title=Appello+dei+docenti+per+Gaza" title="Condividi su Linkedin">
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdocentipergaza.it" title="Condividi su Linkedin">
             <p class="visually-hidden">Condividi su Linkedin</p>
             <svg role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="7" y="6" width="46" height="48" fill="white"/>
               <path d="M53.8 2H6.2C5.08609 2 4.0178 2.4425 3.23015 3.23015C2.4425 4.0178 2 5.08609 2 6.2V53.8C2 54.9139 2.4425 55.9822 3.23015 56.7698C4.0178 57.5575 5.08609 58 6.2 58H53.8C54.9139 58 55.9822 57.5575 56.7698 56.7698C57.5575 55.9822 58 54.9139 58 53.8V6.2C58 5.08609 57.5575 4.0178 56.7698 3.23015C55.9822 2.4425 54.9139 2 53.8 2ZM18.8 49.6H10.4V24.4H18.8V49.6ZM14.6 19.5C13.6373 19.4725 12.7041 19.1619 11.9169 18.607C11.1297 18.0521 10.5235 17.2776 10.174 16.3802C9.82453 15.4827 9.74725 14.5022 9.95183 13.5611C10.1564 12.62 10.6338 11.7601 11.3243 11.0887C12.0148 10.4174 12.8879 9.96441 13.8344 9.78642C14.7809 9.60842 15.7588 9.71329 16.6461 10.0879C17.5333 10.4625 18.2904 11.0903 18.8229 11.8928C19.3554 12.6953 19.6396 13.6369 19.64 14.6C19.6179 15.917 19.0753 17.1717 18.1309 18.0898C17.1865 19.008 15.9171 19.515 14.6 19.5ZM49.6 49.6H41.2V36.328C41.2 32.352 39.52 30.924 37.336 30.924C36.6957 30.9666 36.0701 31.1353 35.4951 31.4205C34.9202 31.7056 34.4072 32.1015 33.9858 32.5854C33.5643 33.0693 33.2425 33.6318 33.0391 34.2404C32.8356 34.849 32.7543 35.4919 32.8 36.132C32.7861 36.2623 32.7861 36.3937 32.8 36.524V49.6H24.4V24.4H32.52V28.04C33.3391 26.794 34.4644 25.7792 35.7881 25.0928C37.1119 24.4064 38.5897 24.0715 40.08 24.12C44.42 24.12 49.488 26.528 49.488 34.368L49.6 49.6Z" fill="#0A66C2"/>
               </svg>
-              
-        </a>
+          </a>
         </li>
       </ul>
     </div>
-    <h4 class="mb-0">Link Utili</h4>
-    <div class="flex-row text-left" style="--gap: 3em;">
+    <h4 class="mb-sm">Link Utili</h4>
+    <div class="flex-row text-left">
       <ul class="unlist">
         <li>
-          <a href="https://cessateilfuoco.org/" title="Appello generale">Cessate Il Fuoco – appello generale</a>
+          <a href="https://www.pcbs.gov.ps/site/lang__en/1405/Default.aspx">
+            Dati aggiornati sulle vittime della guerra
+          </a>
         </li>
+        <li>
+          <a href="https://cessateilfuoco.org/" title="Appello generale">Cessate Il Fuoco &ndash; appello generale</a>
+        </li>
+      </ul>
+      <ul class="unlist">
         <li>
           <a href="https://www.fondazionevikutopia.org/index.php">Fondazione Vittorio Arrigoni</a>
         </li>
         <li>
           <a href="https://www.assopacepalestina.org/">
             AssoPace Palestina
+          </a>
+        </li>
+        <li>
+          <a href="https://terredeshommes.it/news/situazione-bambini-palestinesi-guerra-israele-palestina/">
+            Terre des Hommes
           </a>
         </li>
       </ul>
@@ -209,7 +255,7 @@
     </div>
   </footer>
   <div class="under-footer text-right">
-    <p>Connesso da <a href="https://kipoproduzioni.it">Kìpo Produzioni</a></p>
+    <p>Connesso da <a href="https://kipoproduzioni.it?utm_source=docenti-gaza">Kìpo Produzioni</a></p>
   </div>
 </body>
 

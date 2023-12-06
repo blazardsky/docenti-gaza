@@ -33,7 +33,7 @@ body {
 
 
 header {
-    max-width: clamp(90%, 75ch, 900px);
+    max-width: clamp(75ch, 90%, 1217px);
     margin: 0 auto;
 }
 
@@ -51,11 +51,6 @@ section {
     margin: 3em 0;
 }
 
-article {
-    max-width: 65ch;
-    margin: 0 auto;
-}
-
 article p {
     margin-bottom: 1.5em;
 }
@@ -69,6 +64,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 2px;
+    color: #666;
 }
 
 
@@ -81,12 +77,10 @@ figcaption {
 
 .under-footer {
     background: hsl(12 10% 90%);
-    font-size: 12px;
+    font-size: 10px;
     opacity: 0.65;
-    padding: 1em 2em;
+    padding: 1em 4em;
 }
-
-
 
 
 a {
@@ -174,21 +168,24 @@ h1, h2, h3, h4, h5, h6, .serif {
 }
 
 
-
 /* margin */
 
 .my-lg,
 .mt-lg  {
-    margin-top: 3em;
+    margin-top: 3em !important;
 }
 
 .my-lg, 
 .mb-lg {
-    margin-bottom: 3em;
+    margin-bottom: 3em !important;
 }
 
 .mb-0 {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+}
+
+.mb-sm {
+    margin-bottom: 1em !important;
 }
 
 
@@ -199,20 +196,31 @@ h1, h2, h3, h4, h5, h6, .serif {
     width: fit-content;
 }
 
-
+.w-prose {
+    max-width: 65ch;
+}
 
 ul.unlist {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
-ul.unlist li {
+ul.unlist li + li {
+    margin: 1em 0;
+}
+
+ol {
+    padding-left: 1em;
+}
+
+ol li {
     margin: 1em 0;
 }
 
 .flex-row {
-    --gap: 1em;
-    --align: center;
+    --gap: 3em;
+    --align: flex-start;
     --justify: center;
     display: flex;
     flex-flow: row wrap;
@@ -221,8 +229,14 @@ ul.unlist li {
     justify-content:  var(--justify);
 }
 
-
 li.icon a svg {
     width: 36px;
     height: 36px;
+}
+
+@media (max-width: 996px ){
+    .flex-row {
+        --justify: flex-start;
+        --gap: 1em;
+    }
 }
