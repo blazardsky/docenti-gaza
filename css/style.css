@@ -190,6 +190,14 @@ h1, h2, h3, h4, h5, h6, .serif {
 
 
 
+.p-1 {
+    padding: 1em;
+}
+
+.mx-1 {
+    margin: 0 1em;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -234,9 +242,21 @@ li.icon a svg {
     height: 36px;
 }
 
+
+.columns-desktop {
+    columns: 2;
+    column-gap: 2em;
+}
+
+
 @media (max-width: 996px ){
     .flex-row {
         --justify: flex-start;
         --gap: 1em;
     }
+    .columns-desktop {
+        columns: 1;
+    }
 }
+
+
