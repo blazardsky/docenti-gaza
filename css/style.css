@@ -188,8 +188,6 @@ h1, h2, h3, h4, h5, h6, .serif {
     margin-bottom: 1em !important;
 }
 
-
-
 .p-1 {
     padding: 1em;
 }
@@ -208,6 +206,16 @@ h1, h2, h3, h4, h5, h6, .serif {
     max-width: 65ch;
 }
 
+
+.w-large {
+    max-width: clamp(80%, 85ch ,90vw)
+}
+
+
+
+
+
+
 ul.unlist {
     list-style-type: none;
     padding-left: 0;
@@ -224,6 +232,10 @@ ol {
 
 ol li {
     margin: 1em 0;
+}
+
+ol#firme li {
+    margin: 0.25em 0;
 }
 
 .flex-row {

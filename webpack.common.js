@@ -9,4 +9,13 @@ module.exports = {
     clean: true,
     filename: './js/app.js',
   },
+  performance: {
+    // evito warning per i file zip
+    assetFilter: function (assetFilename) {
+      if(assetFilename.endsWith('.zip')){
+        return false
+      }
+      return !/\.map$/.test(assetFilename);
+    },
+  },
 };
