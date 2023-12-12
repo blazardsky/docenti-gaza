@@ -1,5 +1,5 @@
 
-fetch('./js/vendor/firmatari.json', {
+fetch('./js/data/firmatari.json', {
   credentials: "same-origin",
   headers: {
     "Content-Type": "application/json",
